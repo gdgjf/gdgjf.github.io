@@ -21,6 +21,9 @@ Aqui vai a descrição da proposta da sua talk !
 - Nome aqui
 - Outro aqui
 
+### Nível do conteúdo
+- Iniciante | Intermediário | Avançado
+
 ### Outras considerações iniciais
 Opcional  
 ```
