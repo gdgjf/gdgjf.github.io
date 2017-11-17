@@ -1,5 +1,7 @@
 $(document).ready(function() {
   getEventosDoMeetup();
+  insertThumbsHTML('#members_thumb')
+    .catch(err => console.log(err));
 });
 
 function getEventosDoMeetup(){
@@ -59,4 +61,47 @@ function formattedDate(d = new Date) {
   if (day.length < 2) day = '0' + day;
 
   return `${day}/${month}/${year}`;
+}
+
+let usersWithPhoto = function (user) {
+  return user.photo !== undefined;
+}
+
+let getNameThumbUser = function (user) {
+  return {
+    name: user.name,
+    thumb: user.photo.thumb_link
+  }
+}
+
+let buildImgThumbUsers = function (a, b) {
+  return a + `<img src="${b.thumb}" title="${b.name}" style="padding: 1px"/>`;
+}
+
+function getThumbsFromMeetup() {
+  return new Promise(function(resolve, reject) {
+    $.ajax({
+      type: 'GET',
+      dataType: 'jsonp',
+      url: 'https://api.meetup.com/gdg-juiz-de-fora/members?photo-host=public&sig_id=234046362&sig=2653d370536b54c158f13167fb92a77d14e74fea',
+      success: function (result) {
+        let thumbs = result.data
+          .filter(usersWithPhoto)
+          .map(getNameThumbUser)
+          .reduce(buildImgThumbUsers, '')
+
+        resolve(thumbs);
+      },
+      failed: function (err) {
+        reject(err);
+      }
+    })
+  })
+}
+
+let insertThumbsHTML = function (htmlId) {
+  return getThumbsFromMeetup()
+    .then(function (imgTags) {
+      $(htmlId).html(imgTags);
+    })
 }
