@@ -1,14 +1,14 @@
 $(document).ready(function() {
   getEventosDoMeetup();
   insertThumbsHTML('#members_thumb')
-    .catch(err => console.log(err));
+  .catch(err => console.log(err));
 });
 
 function getEventosDoMeetup(){
 
   $.ajax({
     type:"GET",
-    url:"https://api.meetup.com/gdg-juiz-de-fora/events?photo-host=public&page=6&sig_id=206300172&sig=b171085701711b906b7f3f089d6e936e5806ace6",
+    url:"https://api.meetup.com/gdg-juiz-de-fora/events?photo-host=public&page=6&sig_id=206300172&fields=featured_photo&sig=430d3a19fd92c987f1f1d10a351e889e093ae50d",
 
     success: function(result) {
 
@@ -16,10 +16,7 @@ function getEventosDoMeetup(){
       result.data.forEach(function (item) {
         var date = new Date(item.time);
         var description = item.description;
-        var images = item.description.match(/<img [^>]*src="[^"]*"[^>]*>/gm);
-        if(images != null){
-          description = description.replace(images[0],"");
-        }
+        var image = item.featured_photo.photo_link;
 
         if(description.length < 250){
           description = description.substring(0,description.length);
@@ -27,9 +24,9 @@ function getEventosDoMeetup(){
           description = description.substring(0,250) + " ...";
         }
 
-        eventos += "<div class=\"mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp\"><div class=\"mdl-card__media\"> "
-        + (images == null ? "" : images)
-        + "</div><div class=\"mdl-card__title\"> <h4 class=\"mdl-card__title-text\">"
+        eventos += "<div class=\"mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp\">"
+        + "<div class=\"mdl-card__media\"> <img src=\"" + image + "\"></div>"
+        + "<div class=\"mdl-card__title\"> <h4 class=\"mdl-card__title-text\">"
         + item.name + " (" + formattedDate(date) + ")          </div><div class=\"mdl-card__supporting-text\"><span class=\"mdl-typography--font-light mdl-typography--subhead\">"
         + description + "</div><div class=\"mdl-card__actions\">"
         +"<a class=\"mdl-button mdl-js-button mdl-button--accent mdl-js-ripple-effect\" href=\" "
@@ -86,9 +83,9 @@ function getThumbsFromMeetup() {
       url: 'https://api.meetup.com/gdg-juiz-de-fora/members?photo-host=public&sig_id=234046362&sig=2653d370536b54c158f13167fb92a77d14e74fea',
       success: function (result) {
         let thumbs = result.data
-          .filter(usersWithPhoto)
-          .map(getNameThumbUser)
-          .reduce(buildImgThumbUsers, '')
+        .filter(usersWithPhoto)
+        .map(getNameThumbUser)
+        .reduce(buildImgThumbUsers, '')
 
         resolve(thumbs);
       },
@@ -101,7 +98,7 @@ function getThumbsFromMeetup() {
 
 let insertThumbsHTML = function (htmlId) {
   return getThumbsFromMeetup()
-    .then(function (imgTags) {
-      $(htmlId).html(imgTags);
-    })
+  .then(function (imgTags) {
+    $(htmlId).html(imgTags);
+  })
 }
