@@ -11,6 +11,7 @@ function getEventosDoMeetup() {
     url: "https://api.meetup.com/gdg-juiz-de-fora/events?photo-host=public&page=6&sig_id=206300172&fields=featured_photo&sig=430d3a19fd92c987f1f1d10a351e889e093ae50d",
 
     success: function (result) {
+      if (!Array.isArray(result.data)) return;
 
       var eventos = "";
       result.data.forEach(function (item) {
@@ -82,6 +83,8 @@ function getThumbsFromMeetup() {
       dataType: 'jsonp',
       url: 'https://api.meetup.com/gdg-juiz-de-fora/members?photo-host=public&sig_id=234046362&sig=2653d370536b54c158f13167fb92a77d14e74fea',
       success: function (result) {
+        if (!Array.isArray(result.data)) return;
+
         let thumbs = result.data
         filter(usersWithPhoto)
         map(getNameThumbUser)
