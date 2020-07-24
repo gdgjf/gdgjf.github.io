@@ -10,5 +10,6 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   target_branch: next_app_test_deploy
+  local_dir: out
   on:
     branch: next_app
