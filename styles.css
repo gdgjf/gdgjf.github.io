@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+.theme-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.theme-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+}
+
+.theme-mobile-title {
+  display: none !important;
+}
+
+.theme-logo-image {
+  height: 30px;
+  width: 250px;
+}
+
+.theme-header {
+  overflow: visible;
+  background-color: white;
+}
+
+.theme-header .material-icons {
+  color: #767777 !important;
+}
+
+.theme-header .mdl-layout__drawer-button {
+  background: transparent;
+  color: #767777;
+}
+
+.theme-header .mdl-navigation__link {
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.theme-navigation-container {
+  /* Simple hack to make the overflow happen to the left instead... */
+  direction: rtl;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 500px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+  width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-navigation {
+  /* ... and now make sure the content is actually LTR */
+  direction: ltr;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 800px;
+}
+
+.theme-search-box.is-focused + .theme-navigation-container {
+  opacity: 0;
+  width: 100px;
+}
+
+.theme-navigation .mdl-navigation__link {
+  display: inline-block;
+  height: 60px;
+  line-height: 68px;
+  background-color: transparent !important;
+  border-bottom: 4px solid transparent;
+}
+
+.theme-navigation .mdl-navigation__link:hover {
+  border-bottom: 4px solid #448AFF;
+}
+
+.theme-search-box {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.theme-more-button {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.theme-be-together-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('images/banner.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.theme-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.theme-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.theme-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+.theme-create-character a {
+  text-decoration: none;
+  color: #767777;
+  font-weight: 300;
+}
+
+.theme-screen-section {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.theme-screens {
+  text-align: right;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.theme-screen {
+  text-align: center;
+}
+
+.theme-screen .theme-link {
+  margin-top: 16px;
+  display: block;
+  z-index: 2;
+}
+
+.theme-image-link {
+  text-decoration: none;
+}
+
+.theme-highlight {
+  display: inline-block;
+  width: 160px;
+  margin-right: 32px;
+}
+
+.theme-highlight .theme-screen-image {
+  width: 40%;
+  z-index: 1;
+}
+
+.theme-phone {
+  display: inline-block;
+  width: 64px;
+  margin-right: 48px;
+}
+
+.theme-phone .theme-screen-image {
+  width: 100%;
+  z-index: 1;
+}
+
+
+.theme-tablet {
+  display: inline-block;
+  width: 110px;
+  margin-right: 64px;
+}
+
+.theme-tablet .theme-screen-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.theme-tablet .theme-link {
+  display: block;
+  z-index: 2;
+}
+
+.theme-tv {
+  display: inline-block;
+  width: 300px;
+  margin-right: 80px;
+}
+
+.theme-tv .theme-screen-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.theme-auto {
+  display: inline-block;
+  width: 300px;
+  overflow: hidden;
+}
+
+.theme-auto .theme-screen-image {
+  display: block;
+  height: 300px;
+  z-index: 1;
+}
+
+.theme-highlight-section {
+  position: relative;
+  background: url('images/highlight.png') center top no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.theme-highlight-band {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #37474f;
+}
+
+.theme-highlight-band-text {
+  max-width: 800px;
+  margin-left: 25%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+.theme-highlight-band-text p {
+  padding-top: 8px;
+}
+
+.theme-customized-section {
+  text-align: center;
+}
+
+.theme-customized-section-text {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 16px 0 16px;
+}
+.theme-customized-section-text p {
+  padding-top: 16px;
+}
+
+.theme-customized-section-image {
+  background: url('images/bg_dev_saturday.JPG') center center no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.theme-more-section {
+  padding: 80px 0;
+  max-width: 1044px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.theme-more-section .theme-section-title {
+  margin-left: 0px;
+  padding-bottom: 24px;
+}
+
+.theme-card-container {
+}
+
+.theme-card-container .mdl-card__media {
+  overflow: hidden;
+  background: transparent;
+}
+
+.theme-card-container .mdl-card__media img {
+  width: 100%;
+}
+
+.theme-card-container .mdl-card__title {
+  background: transparent;
+  height: auto;
+}
+
+.theme-card-container .mdl-card__title-text {
+  color: black;
+  height: auto;
+}
+
+.theme-card-container .mdl-card__supporting-text {
+  height: auto;
+  color: black;
+  padding-bottom: 56px;
+}
+
+.theme-card-container .mdl-card__actions {
+  position: absolute;
+  bottom: 0;
+}
+
+.theme-card-container .mdl-card__actions a {
+  border-top: none;
+  font-size: 16px;
+}
+
+.theme-link-menu:hover {
+  cursor: pointer;
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .theme-navigation-container {
+    display: none;
+  }
+
+  .theme-title {
+    display: none !important;
+  }
+
+  .theme-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 120px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .theme-be-together-section {
+    height: 350px;
+  }
+
+  .theme-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .theme-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .theme-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .theme-create-character img {
+    height: 12px;
+  }
+
+  .theme-fab {
+    display: none;
+  }
+
+  .theme-highlight-band-text {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .img-circle {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius:50%;
+  }
