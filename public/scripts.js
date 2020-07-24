@@ -86,9 +86,9 @@ function getThumbsFromMeetup() {
         if (!Array.isArray(result.data)) return;
 
         let thumbs = result.data
-        filter(usersWithPhoto)
-        map(getNameThumbUser)
-        reduce(buildImgThumbUsers, '')
+          .filter(usersWithPhoto)
+          .map(getNameThumbUser)
+          .reduce(buildImgThumbUsers, '')
 
         resolve(thumbs);
       },
