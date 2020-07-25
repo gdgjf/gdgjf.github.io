@@ -3,8 +3,6 @@ import Head from 'next/head'
 const IndexPage = () => (
   <>
     <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="description" content="Google Developer Group de Juiz de Fora" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
