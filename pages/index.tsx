@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '../partials/header'
-import Welcome from '../partials/welcome'
-import NextEvents from '../partials/next-events'
+import BemVindo from '../partials/bem-vindo'
+import ProximosEventos from '../partials/proximos-eventos'
 import ComoParticipar from '../partials/como-participar'
 import QuemSomos from '../partials/quem-somos'
 import UmGDGeH from '../partials/um-gdg-e'
@@ -37,8 +37,8 @@ const IndexPage = () => (
     <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <Header></Header>
       <div className="theme-content mdl-layout__content">
-        <Welcome></Welcome>
-        <NextEvents></NextEvents>
+        <BemVindo></BemVindo>
+        <ProximosEventos></ProximosEventos>
         <ComoParticipar></ComoParticipar>
         <QuemSomos></QuemSomos>
         <UmGDGeH></UmGDGeH>

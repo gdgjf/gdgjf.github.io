@@ -1,4 +1,4 @@
-function Welcome() {
+function BemVindo() {
     return (
         <div className="theme-be-together-section mdl-typography--text-center">
             <div className="logo-font theme-slogan">Google Developers Group Juiz de Fora</div>
@@ -9,4 +9,4 @@ function Welcome() {
     )
 }
 
-export default Welcome
+export default BemVindo

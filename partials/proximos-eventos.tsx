@@ -1,4 +1,4 @@
-function NextEvents() {
+function ProximosEventos() {
     return (
         <div className="theme-more-section">
             <div id="next-events" className="theme-section-title mdl-typography--display-1-color-contrast">
@@ -24,4 +24,4 @@ function NextEvents() {
     )
 }
 
-export default NextEvents
+export default ProximosEventos
