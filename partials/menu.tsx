@@ -1,11 +1,11 @@
 function Menu() {
     return (
-        <div className="theme-navigation-container">
-            <nav className="theme-navigation mdl-navigation">
-                <a className="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
-                <a className="mdl-navigation__link mdl-typography--text-uppercase" href="#next-events">Eventos</a>
-                <a className="mdl-navigation__link mdl-typography--text-uppercase" href="#participate">Como participar</a>
-                <a className="mdl-navigation__link mdl-typography--text-uppercase" href="#about-us">Quem somos?</a>
+        <div className="navigation-container">
+            <nav className="navigation">
+                <a className="navigation__link" href="#">Home</a>
+                <a className="navigation__link" href="#next-events">Eventos</a>
+                <a className="navigation__link" href="#participate">Como participar</a>
+                <a className="navigation__link" href="#about-us">Quem somos?</a>
             </nav>
         </div>
     )

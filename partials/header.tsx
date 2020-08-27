@@ -1,20 +1,15 @@
 import Menu from "./menu"
 
 const Header = () => (
-    <div className="theme-header mdl-layout__header mdl-layout__header--waterfall">
-        <div className="mdl-layout__header-row">
-            <span className="theme-title mdl-layout-title">
-                <img className="theme-logo-image" src="images/header_logo_gdg.png" />
-            </span>
-            <div className="theme-header-spacer mdl-layout-spacer"></div>
-
+    <header className="main-header">
+        <div className="main-wrapper">
+            <div className="logo-wrapper">
+                <img className="logo-image" src="images/header_logo_gdg.png" />
+            </div>
+            <div className="flex"></div>
             <Menu></Menu>
-
-            <span className="theme-mobile-title mdl-layout-title">
-                <img className="theme-logo-image" src="images/header_logo_gdg.png" />
-            </span>
         </div>
-    </div>
+    </header>
 )
 
 export default Header

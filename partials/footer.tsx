@@ -1,10 +1,9 @@
 function Footer() {
     return (
-        <footer className="mdl-mega-footer">
-            <div className="mdl-mega-footer__middle-section">
+        <footer className="mdl-mega-footer rodape">
+            <div className="mdl-mega-footer__middle-section main-wrapper">
 
                 <div className="mdl-mega-footer__drop-down-section">
-                    <input className="mdl-mega-footer__heading-checkbox" type="checkbox" defaultChecked />
                     <h1 className="mdl-mega-footer__heading">Nosso GDG</h1>
                     <ul className="mdl-mega-footer__link-list">
                         <li><a href="https://developers.google.com/groups/chapter/101567513255448590336/">GDG Chapter</a></li>
@@ -14,7 +13,6 @@ function Footer() {
                 </div>
 
                 <div className="mdl-mega-footer__drop-down-section">
-                    <input className="mdl-mega-footer__heading-checkbox" type="checkbox" defaultChecked />
                     <h1 className="mdl-mega-footer__heading">Siga-nos!</h1>
                     <ul className="mdl-mega-footer__link-list">
                         <li><a href="https://plus.google.com//101567513255448590336">Google+</a></li>
@@ -23,7 +21,6 @@ function Footer() {
                 </div>
 
                 <div className="mdl-mega-footer__drop-down-section">
-                    <input className="mdl-mega-footer__heading-checkbox" type="checkbox" defaultChecked />
                     <h1 className="mdl-mega-footer__heading">Recursos</h1>
                     <ul className="mdl-mega-footer__link-list">
                         <li><a href="https://developers.google.com/groups/">Google Developers Group</a></li>
@@ -33,7 +30,6 @@ function Footer() {
                 </div>
 
                 <div className="mdl-mega-footer__drop-down-section">
-                    <input className="mdl-mega-footer__heading-checkbox" type="checkbox" defaultChecked />
                     <h1 className="mdl-mega-footer__heading">Comunidades</h1>
                     <ul className="mdl-mega-footer__link-list">
                         <li><a href="./devjf/index.html">DEV JF - Comunidade no Slack</a></li>
