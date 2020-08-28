@@ -35,7 +35,6 @@ const IndexPage = () => (
 
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium" />
 
-      <link rel="stylesheet" href="./styles.css"></link>
     </Head>
     <Header></Header>
     <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
