@@ -13,12 +13,11 @@ function ComoParticipar() {
                     <p>
                         Além de ir aos grupos de estudos e demais eventos, você também pode participar se tornando um organizador, basta conversar com os organizadores em qualquer evento, demonstrar seu interesse e começar efetivamente a apoiar as ações do grupo.
                     </p>
-                    <br />
-                    <span style={{ textAlign: 'center' }}>
+                    <p className="wrapper-sugerir-eventos">
                         <a href="https://github.com/gdgjf/gdgjf.github.io#eventos" className="btn-primary">
                             Sugerir eventos
                         </a>
-                    </span>
+                    </p>
                 </div>
                 <img className="img-round no-margin-right" src="/images/img-como-participar.png" alt=""/>
             </div>
