@@ -15,7 +15,7 @@ function ComoParticipar() {
                     </p>
                     <br />
                     <span style={{ textAlign: 'center' }}>
-                        <a href="https://github.com/gdgjf/gdgjf.github.io#eventos" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                        <a href="https://github.com/gdgjf/gdgjf.github.io#eventos" className="btn-primary">
                             Sugerir eventos
                         </a>
                     </span>
