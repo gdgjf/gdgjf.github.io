@@ -42,10 +42,11 @@ const IndexPage = () => (
       <div className="theme-content mdl-layout__content">
         <BemVindo></BemVindo>
         {/*<ProximosEventos></ProximosEventos>*/}
-        <QuemSomos></QuemSomos>
         <ComoParticipar></ComoParticipar>
-        <ParticiparAtivamente></ParticiparAtivamente>
+        <QuemSomos></QuemSomos>
+        <div className="theme-customized-section-image"></div>
         <UmGDGeH></UmGDGeH>
+        <ParticiparAtivamente></ParticiparAtivamente>
         <div id="members_thumb" style={{ textAlign: "center" }}></div>
         <Footer></Footer>
       </div>

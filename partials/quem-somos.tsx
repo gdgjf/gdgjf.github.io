@@ -20,7 +20,6 @@ function QuemSomos() {
                 </div>
 
             </section>
-            <div className="theme-customized-section-image"></div>
         </>
     )
 }
