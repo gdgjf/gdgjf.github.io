@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Header from "../partials/header";
 import BemVindo from "../partials/bem-vindo";
-import ProximosEventos from "../partials/proximos-eventos";
 import ComoParticipar from "../partials/como-participar";
 import ParticiparAtivamente from "../partials/participar-ativamente";
 import QuemSomos from "../partials/quem-somos";
