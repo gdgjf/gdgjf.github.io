@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/gdgjf/gdgjf.github.io.svg?branch=develop)](https://travis-ci.com/gdgjf/gdgjf.github.io)
+
 # Google Developers Group Juiz de Fora
 
 ### Site
