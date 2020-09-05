@@ -1,3 +1,4 @@
+/* Atualmente não temos acesso a API dos eventos, então vou tirar isso do ar */
 function ProximosEventos() {
     return (
         <section id="next-events" className="section-proximos-eventos section-full-width">

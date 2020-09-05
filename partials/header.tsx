@@ -4,7 +4,9 @@ const Header = () => (
     <header className="main-header">
         <div className="main-wrapper">
             <div className="logo-wrapper">
-                <img className="logo-image" src="images/header_logo_gdg.png" />
+                <a href="/">
+                    <img className="logo-image" src="images/gdgjf-chapter-logo.png"/>
+                </a>
             </div>
             <div className="flex"></div>
             <Menu></Menu>

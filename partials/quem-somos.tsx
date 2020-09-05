@@ -8,8 +8,8 @@ function QuemSomos() {
                             Quem somos?
                         </h2>
                         <p>
-                            O Grupo de Desenvolvedores Google Juiz de Fora é para todos aqueles interessados na tecnologia para desenvolvedores do Google.
-                            Tudo, de plataformas do theme, do App Engine e do Google Chrome, a APIs de produtos, como a API do Google Maps, a API do YouTube e a API do Google Agenda.
+                            O Google Developers Group Juiz de Fora é para todos aqueles interessados em programação e tecnologias para desenvolvedores.
+                            Desde de plataformas e tecnologias ligadas ao Google (como Angular, Firebase, Google Cloud, Google Chrome), quanto de outros provedores (como React, .NET Core, VUE, Next.JS) são abordados em nossos eventos.
                         </p>
 
                         <p>

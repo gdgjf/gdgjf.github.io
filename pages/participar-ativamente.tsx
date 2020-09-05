@@ -1,11 +1,6 @@
 import Head from "next/head";
 import Header from "../partials/header";
-import BemVindo from "../partials/bem-vindo";
-import ProximosEventos from "../partials/proximos-eventos";
-import ComoParticipar from "../partials/como-participar";
-import ParticiparAtivamente from "../partials/participar-ativamente";
-import QuemSomos from "../partials/quem-somos";
-import UmGDGeH from "../partials/um-gdg-e";
+import Papeis from "../partials/papeis";
 import Footer from "../partials/footer";
 
 const IndexPage = () => (
@@ -19,7 +14,7 @@ const IndexPage = () => (
         name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
       />
-      <title>GDG Juiz de Fora</title>
+      <title>Papeis - GDG Juiz de Fora</title>
 
       <meta name="mobile-web-app-capable" content="yes" />
       <link rel="icon" sizes="192x192" href="images/android-icon.png" />
@@ -40,12 +35,7 @@ const IndexPage = () => (
     <Header></Header>
     <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <div className="theme-content mdl-layout__content">
-        <BemVindo></BemVindo>
-        {/*<ProximosEventos></ProximosEventos>*/}
-        <QuemSomos></QuemSomos>
-        <ComoParticipar></ComoParticipar>
-        <ParticiparAtivamente></ParticiparAtivamente>
-        <UmGDGeH></UmGDGeH>
+        <Papeis></Papeis>
         <div id="members_thumb" style={{ textAlign: "center" }}></div>
         <Footer></Footer>
       </div>

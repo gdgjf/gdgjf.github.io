@@ -6,8 +6,7 @@ function Footer() {
                 <div className="mdl-mega-footer__drop-down-section">
                     <h1 className="mdl-mega-footer__heading">Nosso GDG</h1>
                     <ul className="mdl-mega-footer__link-list">
-                        <li><a href="https://developers.google.com/groups/chapter/101567513255448590336/">GDG Chapter</a></li>
-                        <li><a href="https://groups.google.com/forum/#!forum/gdg-juiz-de-fora">Mailing List</a></li>
+                        <li><a href="https://gdg.community.dev/gdg-juiz-de-fora/">GDG Chapter</a></li>
                         <li><a href="https://github.com/gdgjf">GitHub</a></li>
                     </ul>
                 </div>
@@ -15,7 +14,7 @@ function Footer() {
                 <div className="mdl-mega-footer__drop-down-section">
                     <h1 className="mdl-mega-footer__heading">Siga-nos!</h1>
                     <ul className="mdl-mega-footer__link-list">
-                        <li><a href="https://plus.google.com//101567513255448590336">Google+</a></li>
+                        <li><a href="https://www.instagram.com/gdg.juizdefora/">Instagram</a></li>
                         <li><a href="https://www.facebook.com/GoogleDevelopersGroupJuizDeFora">Facebook</a></li>
                     </ul>
                 </div>
@@ -25,7 +24,6 @@ function Footer() {
                     <ul className="mdl-mega-footer__link-list">
                         <li><a href="https://developers.google.com/groups/">Google Developers Group</a></li>
                         <li><a href="https://pages.github.com">GitHub Pages</a></li>
-                        <li><a href="https://getmdl.io">Material Design Lite</a></li>
                     </ul>
                 </div>
 
