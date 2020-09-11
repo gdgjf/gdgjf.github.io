@@ -50,7 +50,7 @@ body,
   position: relative;
 }
 
-.section-como-participar {
+.section-quem-somos {
   background-color: var(--background-light-gray);
 }
 
@@ -289,6 +289,15 @@ h3 {
   max-width: 90%;
 }
 
+.logo-wrapper a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-wrapper div {
+  display: inline-block;
+}
+
 @media (max-width: 794px) {
   .section-quem-somos .img-round {
     order: 1;
@@ -302,9 +311,7 @@ h3 {
   .wrapper-sugerir-eventos {
     text-align: center;
   }
-}
 
-@media (max-width: 700px) {
   .navigation-container {
     display: none;
   }
@@ -319,6 +326,16 @@ h3 {
 
   .main-header .flex {
     flex: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .section-um-gdg-e {
+    padding-left: 40px;
+  }
+
+  .o-que-nao-e {
+    padding-right: 0;
   }
 
   .img-round {
