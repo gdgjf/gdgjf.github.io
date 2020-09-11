@@ -50,6 +50,7 @@ const IndexPage = () => (
         <Footer></Footer>
       </div>
     </div>
+    <script src="/shadow-header.js"></script>
   </>
 );
 
