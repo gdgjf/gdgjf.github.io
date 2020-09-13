@@ -140,7 +140,7 @@ body {
   transition: .5s box-shadow;
 }
 
-.main-header.shadow{
+.main-header.shadow {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -298,6 +298,34 @@ h3 {
   display: inline-block;
 }
 
+.logo-wrapper div::before,
+.logo-wrapper div::after {
+  content: '';
+  height: 30px;
+  width: 60px;
+  position: absolute;
+  display: block;
+  top: 0px;
+}
+
+.logo-wrapper div::after {
+  right: 0px;
+}
+
+.logo-base,
+.letra-j,
+.letra-f {
+  transform: translateX(0px);
+  transition: 1s;
+  transition-delay: .5s;
+}
+
+.letras-restantes {
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
 @media (max-width: 794px) {
   .section-quem-somos .img-round {
     order: 1;
@@ -341,5 +369,28 @@ h3 {
   .img-round {
     margin: 0;
     margin-top: 64px;
+  }
+
+  .logo-base {
+    transform: translateX(595px);
+  }
+
+  .letra-j {
+    transform: translateX(595px);
+  }
+
+  .letra-f {
+    transform: translateX(-215px);
+  }
+
+  .letras-restantes {
+    opacity: 0;
+    transition: .3s;
+  }
+
+  .logo-base,
+  .letra-j,
+  .letra-f {
+    transition-delay: 0s;
   }
 }
