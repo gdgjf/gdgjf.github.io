@@ -1,11 +1,6 @@
 import Head from "next/head";
 import Header from "../partials/header";
-import BemVindo from "../partials/bem-vindo";
-import ComoParticipar from "../partials/como-participar";
-import MentoriaChamada from "../partials/mentoria-chamada";
-import ParticiparAtivamente from "../partials/participar-ativamente";
-import QuemSomos from "../partials/quem-somos";
-import UmGDGeH from "../partials/um-gdg-e";
+import Mentoria from "../partials/mentoria";
 import Footer from "../partials/footer";
 
 const IndexPage = () => (
@@ -19,7 +14,7 @@ const IndexPage = () => (
         name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
       />
-      <title>GDG Juiz de Fora</title>
+      <title>Mentoria - GDG Juiz de Fora</title>
 
       <meta name="mobile-web-app-capable" content="yes" />
       <link rel="icon" sizes="192x192" href="images/android-icon.png" />
@@ -40,19 +35,11 @@ const IndexPage = () => (
     <Header></Header>
     <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <div className="theme-content mdl-layout__content">
-        <BemVindo></BemVindo>
-        {/*<ProximosEventos></ProximosEventos>*/}
-        <ComoParticipar></ComoParticipar>
-        <MentoriaChamada></MentoriaChamada>
-        <QuemSomos></QuemSomos>
-        <div className="theme-customized-section-image"></div>
-        <UmGDGeH></UmGDGeH>
-        <ParticiparAtivamente></ParticiparAtivamente>
+        <Mentoria></Mentoria>
         <div id="members_thumb" style={{ textAlign: "center" }}></div>
         <Footer></Footer>
       </div>
     </div>
-    <script src="/shadow-header.js"></script>
   </>
 );
 
