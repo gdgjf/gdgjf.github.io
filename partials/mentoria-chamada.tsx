@@ -1,13 +1,18 @@
 function MentoriaChamada() {
     return (
-        <div id="participate" className="section-como-participar section-full-width">
+        <div id="participate" className="section-como-participar section-full-width" style={{paddingTop: 0}}>
             <div className="main-wrapper">
                 <div className="section-text">
                     <h2 className="theme-section-title mdl-typography--display-1-color-contrast">
                         Quer levar sua carreira para outro nível?
                     </h2>
                     <p>
-                        Participe do programa pilot de <a href="/mentoria">mentoria do GDGJF</a> e receba suporte de um profissional experiênte do mercado, para te ajudar a alcançar seus objetivos!
+                        Estamos realizando um programa piloto de <a href="/mentoria">mentoria</a> do GDGJF. O objetivo é termos mentores instruindo e dando suporte aos mentorados, com encontros periódicos, para ajudar a alcançar seus objetivos!
+                    </p>
+                    <p className="wrapper-sugerir-eventos">
+                        <a href="/mentoria" className="btn-primary">
+                            Saber mais
+                        </a>
                     </p>
                 </div>
             </div>

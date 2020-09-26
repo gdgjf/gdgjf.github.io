@@ -7,16 +7,17 @@ function ComoParticipar() {
                         Como Participar?
                     </h2>
                     <p>
-                        Participar do Google Developers Group Juiz de Fora <strong>é muito fácil!</strong>
-                        Se inscreva no <a href={"https://gdg.community.dev/gdg-juiz-de-fora/"}> GDG Community</a>, clicando em "join", para você ser informado de todos os próximos eventos.
-                    </p>
-                    <p>
-                        Além de ir aos grupos de estudos e demais eventos, você também pode participar apresentando conteúdos, se tornando um embaixador em sua instituição e até como organizador, basta conversar com os responsáveis em qualquer evento, demonstrar seu interesse e começar efetivamente a apoiar as ações do grupo.
+                        Participar do Google Developers Group Juiz de Fora <strong>é muito fácil</strong>!
+                        Se inscreva no <a href={"https://gdg.community.dev/gdg-juiz-de-fora/"}> GDG Community</a> para ser informado de todos os próximos eventos.
                     </p>
                     <p className="wrapper-sugerir-eventos">
-                        <a href="https://github.com/gdgjf/gdgjf.github.io#eventos" className="btn-primary">
-                            Sugerir eventos
+                        <a href="https://gdg.community.dev/accounts/login/?next=/gdg-juiz-de-fora/" className="btn-primary">
+                            Inscrever agora
                         </a>
+                    </p>
+                    <p>Uma vez inscrito, você será informado de cada novo evento que realizarmos, e poderá se inscrever e participar.</p>
+                    <p>
+                        Não é necessário ser um expert para participar do GDG, pois nossos eventos são públicos e com desenvolvedores em níveis distintos, desde os que estão começando agora até os mais experientes.
                     </p>
                 </div>
                 <img className="img-round no-margin-right" src="/images/img-como-participar.png" alt=""/>
