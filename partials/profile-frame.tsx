@@ -30,7 +30,7 @@ function ProfileFrame() {
     scope: 'read:org'
   } : {
     client_id: '42f801b641498a27b20d',
-    redirect_uri: '',
+    redirect_uri: 'https://gdgjf.github.io/profile-frame',
     client_secret: '456decb8c32b62f1dc6257da983bdd533515d02f',
     scope: 'read:org'
   };
@@ -76,18 +76,21 @@ function ProfileFrame() {
   }, []);
 
   useEffect(() => {
-    // if(userData){
-    //   if(userData.roles.length === 1) {
-    //     setUserRole(userData.roles[0]);
-    //   }
-    //   else if(userData.roles.length > 1){
-    //     setDropDownData(userData.roles);
-    //   }
-
-    // }
+    if(userData){
+      if(userData?.roles.length === 1) {
+        setUserRole(userData.roles[0]);
+      }
+      else if(userData?.roles.length > 1){
+        setDropDownData(userData.roles);
+      }
+    }
   }, [userData])
 
-  return (
+  return isLoading ? (
+    <div className="spinnerWrapper">
+      <div className="spinner"></div>
+    </div>
+  ) : (
     <div>
       <div id="participate" className="section-como-participar section-full-width">
         <div className="profile-frame-container">
@@ -100,33 +103,35 @@ function ProfileFrame() {
                 <div className="profile-frame-intro-subtitle">
                   Crie sua imagem de perfil autenticando com o Github
                 </div>
-                <button onClick={handleLogin(false)} className="profile-frame-intro-button">
-                  Gerar com Github
-                </button>
-                {/* {userData?.roles.length! > 1 && 
-                  <select className="custom-select" defaultValue="" onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUserRole(e.target.value)}>
-                    <option value="">Escolha...</option>
-                    {dropDownData?.map((opt, i) => (
-                      <option key={i} value={opt}>{opt}</option>
-                    ))}
-                  </select>
-                } */}
+                <div className="profile-frame-intro-button-group">
+                  {userData?.roles?.length! > 1 ? 
+                    <select className="custom-select" defaultValue="" onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setUserRole(e.target.value)}>
+                      <option value="">Escolha...</option>
+                      {dropDownData?.map((opt, i) => (
+                        <option key={i} value={opt}>{opt}</option>
+                      ))}
+                    </select>
+                  :
+                    <button onClick={handleLogin(false)} className="profile-frame-intro-button">
+                      Gerar com Github
+                    </button>
+                  }
+                </div>
               </div>
             </div>
             <div className="profile-frame-picture">
-              <div className="profile-frame-picture-frame" ref={divRef} style={{border: !Boolean(userData?.avatar_url) ? '5px dashed gray' : 'unset'}}>
+              <div className="profile-frame-picture-frame" ref={divRef} style={{border: !Boolean(userData?.avatar_url) ? '5px dashed gray' : '1px solid #e1e1e1'}}>
                 {userData?.avatar_url ? <img className="avatar-image" src={userData.avatar_url}/> : 'Sua imagem aqui'}
                 <div className="profile-frame-picture-footer">
-                  <div className="profile-frame-picture-footer-logo-wrapper">
-                    <img src="/images/gdg-logo-icon.png" className="gdg-logo"/>
-                  </div>
                   <div className="profile-frame-picture-footer-identification">
-                    <h3>{userData?.name ? userData.name : "Seu nome"}</h3>
-
-                    <h4>
-                      {userRole ? userRole : "Seu cargo"}
-                    </h4>
+                    <div className="profile-frame-picture-footer-logo-wrapper">
+                      <img src="/images/gdg-logo-icon.png" className="gdg-logo"/>
+                      <h3>GDG Juiz de fora</h3>
+                    </div>
                   </div>
+                  <h4 className="profile-frame-picture-footer-identification-role">
+                    {userRole ? userRole : "Seu cargo"}
+                  </h4>
                 </div>
               </div>
               {userData?.avatar_url && userRole && 
@@ -134,7 +139,6 @@ function ProfileFrame() {
                   <p>Download</p>
                 </button>
               }
-
             </div>
           </div>
         </div>

@@ -23,7 +23,7 @@ function runMiddleware(req: NextApiRequest, res: NextApiResponse, fn: any) {
 
 // Fetching all GDG organization members on Github
 async function fetchMembers(token: string | null){
-  return fetch('https://api.github.com/repos/gdgjf/gdgjf.github.io/collaborators/Vini98br', {
+  return fetch('https://api.github.com/orgs/gdgjf/members', {
     headers: {
       Authorization: `token ${token}`
     }
@@ -43,7 +43,6 @@ async function fetchContributors(token: string | null){
   .then(resp => resp.json());
   if(repos){
     for(const repo of repos){
-      console.log(repo.name)
       await fetch(`https://api.github.com/repos/gdgjf/${repo.name}/contributors`,{
         headers: {
           Authorization: `token ${token}`,
@@ -59,7 +58,6 @@ async function fetchContributors(token: string | null){
           })
         })
     }
-    console.log(allContributors)
     return allContributors;
   }
 }
@@ -106,9 +104,29 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       .then(resp => resp.json())
       .then(async user => {
         
-        const organizationMembers: Array<any> = await fetchMembers(access_token!);
-        const contributors: any[] | undefined = await fetchContributors(access_token!);
-        const roles = getUserRole(user, organizationMembers, contributors!);
+        //* Dinamic fetching almost complete, just missing collaborators
+        // const organizationMembers: Array<any> = await fetchMembers(access_token!);
+        // const contributors: any[] | undefined = await fetchContributors(access_token!);
+        // const roles = getUserRole(user, organizationMembers, contributors!);
+
+        const members = ['tiagogouvea', 'lesleyandrez', 'Francila', 'fnnrodrigo'];
+        const contributors = ['gb78', 'ravaiano', 'jfbaraky', 'macanhajc', 'atilabraga', 'Vini98br', 'fbvictorhugo'];
+        const ambassadors = ['RamonXavier', 'rbrasill', 'JosiasSalermo', 'Gpimentel7']; 
+
+        let roles;
+        if(members.includes(user.login)){
+          roles = ["Organizador", "Mentor"];
+        }
+        else if(contributors.includes(user.login)){
+          roles = ["Apoiador", "Mentor"]
+        }
+        else if (ambassadors.includes(user.login)){
+          roles = ["Embaixador"];
+        }
+        else{
+          roles = ["Participante"];
+        }
+
         return res.status(200).send({
           avatar_url: user.avatar_url,
           bio: user.bio,
@@ -119,7 +137,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
           name: user.name,
           node_id: user.node_id,
           url: user.url,
-          roles,
+          roles
         })})
       .catch((error) => res.status(400).json(error));
     } catch (e) {
