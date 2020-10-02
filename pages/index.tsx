@@ -7,6 +7,7 @@ import ParticiparAtivamente from "../partials/participar-ativamente";
 import QuemSomos from "../partials/quem-somos";
 import UmGDGeH from "../partials/um-gdg-e";
 import Footer from "../partials/footer";
+import Patrocinadores from "../partials/patrocinadores";
 
 const IndexPage: React.FC = () => (
   <>
@@ -51,6 +52,7 @@ const IndexPage: React.FC = () => (
         <UmGDGeH></UmGDGeH>
         <ParticiparAtivamente></ParticiparAtivamente>
         <div id="members_thumb" style={{ textAlign: "center" }}></div>
+        <Patrocinadores />
         <Footer></Footer>
       </div>
     </div>
