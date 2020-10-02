@@ -1,6 +1,6 @@
 const Patrocinadores: React.FC = () => {
   return (
-    <section className="section-full-width">
+    <section id="patrocinadores" className="section-full-width">
       <div className="main-wrapper">
         <h3>Nossos Patrocinadores</h3>
         <div className="patrocinador-container">
