@@ -8,7 +8,7 @@ import QuemSomos from "../partials/quem-somos";
 import UmGDGeH from "../partials/um-gdg-e";
 import Footer from "../partials/footer";
 
-const IndexPage = () => (
+const IndexPage: React.FC = () => (
   <>
     <Head>
       <meta
@@ -34,8 +34,10 @@ const IndexPage = () => (
 
       <link rel="shortcut icon" href="images/favicon.png" />
 
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium" />
-
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium"
+      />
     </Head>
     <Header></Header>
     <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">

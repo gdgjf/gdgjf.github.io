@@ -1,6 +1,6 @@
 function BemVindo() {
   return (
-    <div className="setion-welcome">
+    <div className="section-welcome">
       <h1 className="title">GDG Juiz de Fora</h1>
       <h2 className="message-welcome">
         Bem-vindo(a) a comunidade de desenvolvedores. <br />

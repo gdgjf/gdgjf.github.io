@@ -1,7 +1,7 @@
 function UmGDGeH() {
     return (
         <section className="section-um-gdg-e section-full-width">
-            <div className="main-wrapper">
+            <div className="main-wrapper section-gdg-e">
                 <div className="o-que-e">
                     <h3>Um GDG é </h3>
                     <ul>
