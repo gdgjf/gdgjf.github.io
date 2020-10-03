@@ -2,7 +2,7 @@ const Patrocinadores: React.FC = () => {
   return (
     <section id="patrocinadores" className="section-quem-somos section-full-width">
       <div className="main-wrapper">
-        <h3>Nossos Patrocinadores</h3>
+        <h3 style={{textAlign: "center"}}>Nossos Patrocinadores</h3>
         <div className="patrocinador-container">
           <div className="patrocinador-image-container">
             <a href="https://appmasters.io/" target="_blank" rel="noreferrer">
