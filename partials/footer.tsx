@@ -30,7 +30,10 @@ function Footer() {
                 <div className="mdl-mega-footer__drop-down-section">
                     <h1 className="mdl-mega-footer__heading">Comunidades</h1>
                     <ul className="mdl-mega-footer__link-list">
-                        <li><a href="./devjf/index.html">DEV JF - Comunidade no Slack</a></li>
+                        <li><a href="https://devjf.herokuapp.com/">DEV JF - Comunidade no Slack</a></li>
+                        <li><a href="http://emjuizdefora.com/gbgjf/o-que-e-o-gbgjf/">GBG Juiz de Fora</a></li>
+                        <li><a href="https://www.computadoresparatodos.com.br/">Computadores para todos</a></li>
+                        <li><a href="https://zero40.com.br/">Zero40</a></li>
                     </ul>
                 </div>
 
