@@ -393,6 +393,10 @@ h3 {
   background-color: #3969da;
 }
 
+.profile-frame-intro-button:focus {
+  outline: none;
+}
+
 .profile-frame-picture {
   width: 100%;
   display: flex;
@@ -479,7 +483,10 @@ h3 {
   color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   padding: 10px 5px;
+}
 
+.custom-select:focus {
+  outline: none;
 }
 
 .profile-frame-intro-button-group {

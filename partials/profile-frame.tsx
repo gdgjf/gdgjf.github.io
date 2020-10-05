@@ -43,7 +43,7 @@ function ProfileFrame() {
   };
 
   useEffect(() => {
-    const setState = ({newValue, key, ...rest}: StorageEvent) => {
+    const setState = ({newValue, key}: StorageEvent) => {
       if(key === '@GitHub_User' || key === null)
         setUserData(JSON.parse(newValue!));
     }
