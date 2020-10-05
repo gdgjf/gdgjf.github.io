@@ -1,6 +1,6 @@
 const listOfCommunity: { image: string; body: string; link: string }[] = [
   {
-    image: "/images/slack-logo.png",
+    image: "/images/dev-jf-logo.png",
     body:
       "Slack voltado para desenvolvedores de Juiz de Fora conversarem, falarem de progamação, dos eventos, tirarem suas dúvidas e conhecerem outros devs da cidade.",
     link: "https://devjf.herokuapp.com/",
@@ -29,26 +29,20 @@ const Comunidade: React.FC = () => {
   return (
     <section id="comunidade" className="section-full-width">
       <div className="main-wrapper">
-        <h3>Conheça nossa comunidade</h3>
-        {listOfCommunity.map((community, index) => (
-          <div
-            key={index}
-            className="community-card theme-more-section main-wrapper"
-          >
-            <img src={community.image} />
-            <p>{community.body}</p>
-            <p className="wrapper-sugerir-eventos">
-              <a
-                className="btn-primary"
-                href={community.link}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Acessar
+        <h3>Outras comunidades de Juiz de Fora</h3>
+        <div className="community-wrapper">
+          {listOfCommunity.map((community, index) => (
+            <div
+              key={index}
+              className="community-card theme-more-section main-wrapper"
+            >
+              <a href={community.link} target="_blank" rel="noreferrer">
+                <img src={community.image} />
               </a>
-            </p>
-          </div>
-        ))}
+              <p>{community.body}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
