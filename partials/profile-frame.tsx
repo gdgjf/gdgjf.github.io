@@ -29,9 +29,9 @@ function ProfileFrame() {
     client_secret: 'c84d20a06833815b97b0673c7112874719bf37b5',
     scope: 'read:org'
   } : {
-    client_id: '42f801b641498a27b20d',
+    client_id: 'a6f77bda2415ed01330e',
     redirect_uri: 'https://gdgjf.github.io/profile-frame',
-    client_secret: '456decb8c32b62f1dc6257da983bdd533515d02f',
+    client_secret: '8caf44688c5f96871bc8c5eece2178028762ac10',
     scope: 'read:org'
   };
   
@@ -130,7 +130,7 @@ function ProfileFrame() {
                     </div>
                   </div>
                   <h4 className="profile-frame-picture-footer-identification-role">
-                    {userRole ? userRole : "Seu cargo"}
+                    {userRole ? userRole : "Seu papel"}
                   </h4>
                 </div>
               </div>
