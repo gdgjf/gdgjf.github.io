@@ -15,7 +15,7 @@ function Mentoria() {
      */
     return (
         <div>
-            <div id="participate" className="section-como-participar section-full-width">
+            <div id="participate" className="section-full-width">
                 <div className="main-wrapper">
                     <div className="section-text">
                         <h1>
