@@ -9,7 +9,6 @@ const Header = () => (
           <Logotipo />
         </a>
       </div>
-      <div className="flex"></div>
       <Menu></Menu>
     </div>
   </header>
