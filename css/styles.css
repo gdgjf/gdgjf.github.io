@@ -159,6 +159,16 @@ h3 {
   overflow-x: auto;
 }
 
+.wrapper-img::-webkit-scrollbar {
+  height: 0px;
+}
+.wrapper-img::-moz-scrollbar {
+  height: 0px;
+}
+.wrapper-img::scrollbar {
+  height: 0px;
+}
+
 header {
   position: sticky;
   top: 0;
