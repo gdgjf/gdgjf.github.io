@@ -29,7 +29,7 @@ function Mentoria() {
                             O GDG JF está aqui para ajudar você a crescer em sua carreira e, pensando nisso, criamos o programa de Mentoria do GDGJF.
                         </p>
                         <p>
-                            Nosso objetivo é conectar mentores que têm algo a ensinar com devs ávidos por conhecimento.Será uma grande oportunidade para fazer networking, aprender novas habilidades e também acelerar e masterizar aquilo que você já vem estudando.
+                            Nosso objetivo é conectar mentores que têm algo a ensinar com devs ávidos por conhecimento. Será uma grande oportunidade para fazer networking, aprender novas habilidades e também acelerar e masterizar aquilo que você já vem estudando.
                         </p>
                         <p>
                             Tudo isso é gratuito e todos podem participar! 💪
@@ -37,7 +37,7 @@ function Mentoria() {
                         <h2 className="theme-section-title mdl-typography--display-1-color-contrast" style={{marginTop: 50}}>
                             Participe da Mentoria do GDG JF!
                         </h2>
-                        <p>Seja seu objetivo crescer na carreira, aprender uma nova linguagem ou ganhar prática em um framework, um mentor poderá usar toda sua experiência pra de levar no caminho do sucesso.</p>
+                        <p>Seja seu objetivo crescer na carreira, aprender uma nova linguagem ou ganhar prática em um framework, um mentor poderá usar toda sua experiência pra te levar no caminho do sucesso.</p>
                         <p>
                             Iremos receber todas as inscrições e fazer o "match", buscando um mentor que possa te ajudar a alcançar seus objetivos.
                         </p>
