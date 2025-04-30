@@ -142,7 +142,7 @@ const Header = () => {
           <Link className={styles.link} href="/#about-us">
             Quem somos
           </Link>
-          <Link className={styles.link} href="/#patrocinadores">
+          <Link className={styles.link} href="/#partners">
             Patrocinadores
           </Link>
         </nav>

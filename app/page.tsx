@@ -78,7 +78,7 @@ export default function Home() {
           <Button href="/mentoria">Saber mais</Button>
         </div>
       </Section>
-      <Section variant="gray">
+      <Section id="about-us" variant="gray">
         <Image
           src="/images/who-we-are.png"
           alt="Quem somos??"
@@ -184,7 +184,7 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section variant="gray">
+      <Section id="partners" variant="gray">
         <h2>Nossos Patrocinadores</h2>
       </Section>
     </div>
