@@ -15,7 +15,13 @@ const Community = ({
   return (
     <div className={styles.container}>
       <a href={href}>
-        <Image src={logo} width={320} height={100} alt={alt} />
+        <Image
+          className={styles.logo}
+          src={logo}
+          width={320}
+          height={100}
+          alt={alt}
+        />
       </a>
       <p>{description}</p>
       <hr />
