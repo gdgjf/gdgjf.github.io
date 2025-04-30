@@ -5,6 +5,7 @@ import Button from "@/src/components/Button";
 import Image from "next/image";
 import Community from "@/src/components/Community";
 import { Metadata } from "next";
+import { getBasePublicPath } from "@/src/utils";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -13,7 +14,7 @@ export default function Home() {
     <div className={openSans.className}>
       <Section variant="gray" className={styles.welcomeSection}>
         <Image
-          src="/images/logo.svg"
+          src={getBasePublicPath() + "/images/logo.svg"}
           alt="Logo"
           width={250}
           height={122}
@@ -28,7 +29,7 @@ export default function Home() {
           </h2>
         </div>
         <Image
-          src="/images/droid-community.png"
+          src={getBasePublicPath() + "/images/droid-community.png"}
           alt="Logo"
           width={1171}
           height={187}
@@ -60,7 +61,7 @@ export default function Home() {
           </p>
         </div>
         <Image
-          src="/images/participate.png"
+          src={getBasePublicPath() + "/images/participate.png"}
           alt="Como Participar?"
           width={325}
           height={325}
@@ -81,7 +82,7 @@ export default function Home() {
       </Section>
       <Section id="about-us" variant="gray">
         <Image
-          src="/images/who-we-are.png"
+          src={getBasePublicPath() + "/images/who-we-are.png"}
           alt="Quem somos??"
           width={700}
           height={875}
@@ -147,7 +148,7 @@ export default function Home() {
       </Section>
       <Section variant="gray">
         <Image
-          src="/images/participate.png"
+          src={getBasePublicPath() + "/images/participate.png"}
           alt="Participar ativamente"
           width={325}
           height={325}
@@ -172,13 +173,13 @@ export default function Home() {
           <div className={styles.communitiesContainer}>
             <Community
               alt="Dev JF"
-              logo="/images/logo-dev-jf.png"
+              logo={getBasePublicPath() + "/images/logo-dev-jf.png"}
               description="Slack voltado para desenvolvedores de Juiz de Fora conversarem, falarem de progamação, dos eventos, tirarem suas dúvidas e conhecerem outros devs da cidade."
               href="https://devjf.herokuapp.com/"
             />
             <Community
               alt="Zero40 Ecossistema Empreendedor de Juiz de Fora"
-              logo="/images/logo-zero40.png"
+              logo={getBasePublicPath() + "/images/logo-zero40.png"}
               description="É o ecosistema de startups de Juiz de Fora, criado para connectar todas as redes, comunidades, investidores, incubadoras e demais instituições em um único lugar."
               href="https://zero40.com.br/"
             />
