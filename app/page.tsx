@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Button from "@/src/components/Button";
 import Image from "next/image";
 import Community from "@/src/components/Community";
+import { Metadata } from "next";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
@@ -190,3 +191,8 @@ export default function Home() {
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: "GDG Juiz de Fora",
+  description: "Google Developer Group de Juiz de Fora",
+};
