@@ -36,6 +36,7 @@
 
 .communitiesContainer {
     display: flex;
+    gap: 16px;
     justify-content: space-between;
 
     @media (max-width: 768px) {
