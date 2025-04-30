@@ -37,4 +37,9 @@
 .communitiesContainer {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+        align-items: center;
+        flex-direction: column;
+    }
 }
