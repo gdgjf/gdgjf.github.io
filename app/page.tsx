@@ -34,7 +34,7 @@ export default function Home() {
           className={styles.imageCommunity}
         />
       </Section>
-      <Section>
+      <Section id="participate">
         <div className={styles.sectionColumn}>
           <h2>Como Participar?</h2>
           <p>
