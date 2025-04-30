@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInner}>
-        <div className={styles.footerFirstColumn}>
+        <div>
           <h1 className={styles.footerHeading}>Nosso GDG</h1>
           <ul className="mdl-mega-footer__link-list">
             <li>

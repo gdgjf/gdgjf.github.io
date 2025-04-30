@@ -1,0 +1,40 @@
+.welcomeSection {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sectionColumn {
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.image {
+    display: flex;
+    flex-shrink: 0;
+    width: 325px;
+    height: 325px;
+    border-radius: 100%;
+}
+
+.imageCommunity {
+    position: absolute;
+    max-width: 98vw;
+    height: auto;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+        bottom: -80px;
+        max-width: none;
+    }
+}
+
+.communitiesContainer {
+    display: flex;
+    justify-content: space-between;
+}

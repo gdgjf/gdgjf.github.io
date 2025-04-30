@@ -23,6 +23,30 @@ body {
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+    color: #0000ee;
+}
+
+p {
+    color: #777;
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+li {
+    color: #777;
+    list-style-position: inside;
 }

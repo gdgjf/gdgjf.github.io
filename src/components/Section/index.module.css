@@ -1,0 +1,21 @@
+.section {
+    position: relative;
+    padding: 120px;
+}
+
+.sectionInner {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 992px;
+    margin: 0 auto;
+
+    @media (max-width: 884px) {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.gray {
+    background-color: #f5f5f5;
+}
