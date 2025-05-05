@@ -127,16 +127,16 @@ const Header = () => {
           />
         </svg>
         <nav className={styles.navigation}>
-          <Link className={styles.link} href="/#">
+          <Link className={styles.link} href="/">
             Home
           </Link>
-          <Link className={styles.link} href="/#participate">
+          <Link className={styles.link} href="#participate">
             Como participar
           </Link>
-          <Link className={styles.link} href="/#about-us">
+          <Link className={styles.link} href="#about-us">
             Quem somos
           </Link>
-          <Link className={styles.link} href="/#partners">
+          <Link className={styles.link} href="#partners">
             Patrocinadores
           </Link>
         </nav>
