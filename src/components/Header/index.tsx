@@ -5,9 +5,6 @@ import { useEffect } from "react";
 
 const Header = () => {
   useEffect(() => {
-    console.log("HEI");
-    console.log(window.document);
-
     const onScroll = () => {
       const header = document.querySelector("header");
 
@@ -135,9 +132,6 @@ const Header = () => {
           </Link>
           <Link className={styles.link} href="/#participate">
             Como participar
-          </Link>
-          <Link className={styles.link} href="/mentoria">
-            Mentoria
           </Link>
           <Link className={styles.link} href="/#about-us">
             Quem somos

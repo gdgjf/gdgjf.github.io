@@ -6,12 +6,13 @@ import Image from "next/image";
 import Community from "@/src/components/Community";
 import { Metadata } from "next";
 import { getBasePublicPath } from "@/src/utils";
+import Link from "next/link";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className={openSans.className}>
+    <div className={`${openSans.className} ${styles.page}`}>
       <Section variant="gray" className={styles.welcomeSection}>
         <Image
           src={getBasePublicPath() + "/images/logo.svg"}
@@ -21,7 +22,7 @@ export default function Home() {
           className={styles.image}
         />
         <div className={styles.sectionColumn}>
-          <h1>GDG Juiz de Fora</h1>
+          <h1 className={styles.heading}>GDG Juiz de Fora</h1>
           <h2>
             Boas-vindas à comunidade de desenvolvedores
             <br />
@@ -48,7 +49,7 @@ export default function Home() {
             para ser informado de todos os próximos eventos.
           </p>
           <Button href="https://gdg.community.dev/accounts/login/?next=/gdg-juiz-de-fora/">
-            Inscrever agora
+            Inscreva-se agora
           </Button>
           <p>
             Uma vez inscrito, você será informado de cada novo evento que
@@ -67,18 +68,6 @@ export default function Home() {
           height={325}
           className={styles.image}
         />
-      </Section>
-      <Section>
-        <div className={styles.sectionColumn}>
-          <h2>Quer levar sua carreira para outro nível?</h2>
-          <p>
-            Estamos realizando um programa piloto de{" "}
-            <a href="/mentoria">mentoria</a> do GDGJF. O objetivo é termos
-            mentores instruindo e dando suporte aos mentorados, com encontros
-            periódicos, para ajudar a alcançar seus objetivos!
-          </p>
-          <Button href="/mentoria">Saber mais</Button>
-        </div>
       </Section>
       <Section id="about-us" variant="gray">
         <Image
@@ -187,7 +176,20 @@ export default function Home() {
         </div>
       </Section>
       <Section id="partners" variant="gray">
-        <h2>Nossos Patrocinadores</h2>
+        <div className={styles.sectionColumn}>
+          <h2>Nossos Patrocinadores</h2>
+          <p>
+            Seja um patrocinador!{" "}
+            <Link target="_blank" href="https://wa.me/3288735683">
+              Fale conosco
+            </Link>{" "}
+            para mais informações.
+          </p>
+
+          <Button target="_blank" href="https://wa.me/3288735683">
+            Seja um patrocinador
+          </Button>
+        </div>
       </Section>
     </div>
   );

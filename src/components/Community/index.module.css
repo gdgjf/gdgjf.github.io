@@ -29,4 +29,9 @@
 .logo {
     height: 100px;
     width: auto;
+
+    @media (max-width: 768px) {
+        max-width: 320px;
+        height: auto;
+    }
 }

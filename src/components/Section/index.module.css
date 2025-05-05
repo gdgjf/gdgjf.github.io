@@ -1,6 +1,10 @@
 .section {
     position: relative;
     padding: 120px;
+
+    @media (max-width: 992px) {
+        padding: 60px;
+    }
 }
 
 .sectionInner {

@@ -1,6 +1,18 @@
+.page {
+    overflow: hidden;
+}
+
 .welcomeSection {
     align-items: center;
     justify-content: space-around;
+}
+
+.heading {
+    text-align: right;
+
+    @media (max-width: 992px) {
+        text-align: center;
+    }
 }
 
 .sectionColumn {
@@ -17,6 +29,11 @@
     width: 325px;
     height: 325px;
     border-radius: 100%;
+
+    @media (max-width: 768px) {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .imageCommunity {
@@ -28,8 +45,9 @@
     bottom: -20px;
     margin: 0 auto;
 
-    @media (max-width: 768px) {
-        bottom: -80px;
+    @media (max-width: 884px) {
+        position: static;
+        margin-left: -60px;
         max-width: none;
     }
 }
