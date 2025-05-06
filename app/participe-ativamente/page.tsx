@@ -20,16 +20,6 @@ export default function Page() {
           desenvolvedores e empreendedores que se destacam por suas iniciativas.
         </p>
       </Role>
-      <Role title="Embaixador">
-        <p>
-          Representa o GDGJF em uma instituição de ensino, servindo de ponte
-          entre o GDG, a coordenação, professores e estudantes.
-        </p>
-        <p>
-          Auxiliam na organização e realizar um grande evento do GDG por
-          semestre na instituição
-        </p>
-      </Role>
       <Role title="Apoiador">
         <p>
           Apresenta um conteúdo em um evento do GDG, dá suporte na realização de
