@@ -153,7 +153,7 @@ export default function Home() {
             efetivamente a apoiar as ações do grupo.
           </p>
           <p>O primeiro passo é participar de nossos eventos.</p>
-          <Button href="/participe-ativamente">Conhecer papeis</Button>
+          <Button href="participe-ativamente">Conhecer papeis</Button>
         </div>
       </Section>
       <Section>
