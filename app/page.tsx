@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </Section>
       <Section>
-        <div className={styles.sectionColumn}>
+        <div className={`${styles.sectionColumn} ${styles.topAligned}`}>
           <h2>Um GDG é</h2>
           <ul>
             <li>
@@ -122,7 +122,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className={styles.sectionColumn}>
+        <div className={`${styles.sectionColumn} ${styles.topAligned}`}>
           <h2>Um GDG não é</h2>
           <ul>
             <li>Gerenciado por uma corporação</li>

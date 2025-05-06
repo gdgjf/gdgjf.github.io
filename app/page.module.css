@@ -23,6 +23,10 @@
     gap: 32px;
 }
 
+.topAligned {
+    justify-content: flex-start;
+}
+
 .image {
     display: flex;
     flex-shrink: 0;
