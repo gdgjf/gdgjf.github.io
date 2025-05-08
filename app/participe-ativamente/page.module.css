@@ -1,0 +1,15 @@
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 226px);
+    gap: 24px;
+    padding: 140px 60px;
+}
+
+.roleContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    min-width: 350px;
+    gap: 32px;
+}
